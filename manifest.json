@@ -1,0 +1,14 @@
+{
+  "name": "ワンクリック進捗どうですか",
+  "description": "ワンクリックで進捗を聞いてもらえます。",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "author": "Masayuki Higashino",
+  "permissions": [
+    "http://*.tumblr.com/*"
+  ],
+  "content_security_policy": "script-src 'self' https://api.tumblr.com; object-src 'self'",
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
