@@ -1,14 +1,21 @@
 {
-  "name": "ワンクリック進捗どうですか",
-  "description": "ワンクリックで進捗を聞いてもらえます。",
+  "name": "進捗どうですか",
+  "description": "進捗を聞いてもらえます。",
   "version": "0.0.1",
   "manifest_version": 2,
   "author": "Masayuki Higashino",
   "permissions": [
-    "http://*.tumblr.com/*"
+    "http://*.tumblr.com/*",
+    "background",
+    "notifications",
+    "alarms"
   ],
+  "background": {
+    "scripts": ["jquery-1.10.2.js", "background.js"]
+  },
   "content_security_policy": "script-src 'self' https://api.tumblr.com; object-src 'self'",
-  "browser_action": {
-    "default_popup": "popup.html"
+  "icons": {
+    "16": "icon-16.png",
+    "128": "icon-128.png"
   }
 }
