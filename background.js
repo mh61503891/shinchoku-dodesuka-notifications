@@ -78,7 +78,7 @@ chrome.alarms.create('update', {
 })
 chrome.alarms.create('notify', {
 	when: Date.now() + 2000,
-	periodInMinutes: 30
+	periodInMinutes: 0.25
 })
 
 
